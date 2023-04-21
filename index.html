@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script src="toolbar.js"></script>
+        <script src="util.js"></script>
+        <script src="style.js"></script>
+        <script src="view.js"></script>
+        <script src="tools.js"></script>
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <input type="file" id="file_open" style="display:none"/>
+
+        <div id="toolbar">
+            <button class="gui btn" id="pretty_file_open" onclick="document.getElementById('file_open').click()">open</button>
+            <input class="gui btn" type="button" id="save_file" value="save">
+			<select class="gui" name="tool" id="tool"></select>
+            <select class="gui" name="color" id="color"></select>
+            <input class="gui" type="text" name="label" id="label"></select>
+		</div>
+		<div id="canvas_container">
+			<canvas id="view" width="640" height="480"></canvas>
+			<br/>
+			<table id="status">
+				<tr id="cursor_position"></tr>
+			</table>
+		</div>
+    </body>
+</html> 
